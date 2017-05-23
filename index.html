@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <form>
+            <br />
+          <input type="text" size="15"  maxlength="30" placeholder="Valor A" id="val_a" ><br /><br />
+        <input type="text" size="15" maxlength="30" placeholder="Valor B" id="val_b">
+            
+            <input class="buton" type="button" value="SUMAR" onclick="segrado('sumar'); return false;" />
+            
+            <label class="label">El Resultado + es =  <label id="label"></label></label>
+            
+            <label class="label">El Resultado - es =  <label id="label2"></label></label>
+            <br /><br />
+        <input type="text" size="15" maxlength="30" placeholder="Valor C" id="val_c"><br /><br />
+            
+        </form>
+      
+<h1>Por medio de un menú dar al usuario la opción de seleccionar círculo o circunferencia si
+selecciona círculo calcular su área. A=PI*r^2, si selecciona circunferencia calcular su longitud</h1>
+   
+
+<ul>
+  <li><a onClick="ocultar_1();" href="#home">Circulo</a></li>
+  <li><a onClick="ocultar_2();"  href="#news">Circunferencia</a></li>
+</ul>
+
+        <div id="uno">
+        Area:  <input type="text" size="15" maxlength="30" placeholder="Ingrese el Area" id="area">
+        <input type="button" value="Total" onclick="area()" />
+            <label id="label3"></label> 
+        </div>
+        <div id="dos">
+        Radio:  <input type="text" size="15" maxlength="30" placeholder="Ingrese el Radio" id="radio">
+        <input type="button" value="Total" onclick="radio()" />
+            <label id="label4"></label> 
+        </div>
+        <script type="text/javascript" src="js/funciones.js"> </script>
+    </body>
+   
+</html>
